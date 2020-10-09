@@ -27,7 +27,7 @@ export const Button = ({
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}
-        type={typr}
+        type={type}
       >
         {children}
       </button>
