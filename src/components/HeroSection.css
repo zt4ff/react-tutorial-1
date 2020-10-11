@@ -1,23 +1,13 @@
 video {
-  /*object-fit is use to specify how an img or video should be resized to fix it containers*/
-  /**
-	 * [fit description]
-	 * The object fit default value is fill which means the img or video should fill the container which ot may be streched
-	 * or quished to fill it
-	 *
-	 * - cover: the replaced content is sized to maintain it'saspect ratio while filing the elements entire content box.
-	 * 			the object will be clipped to fit
-	 * - none: The replaced content is nor resized
-	 * -scale-down: The image is resized as if none or contain were specified. would in smaller concrete object size
-	 */
   object-fit: cover;
   width: 100%;
   height: 100%;
+  position: fixed;
   z-index: -1;
 }
 
 .hero-container {
-  /* background: url("image/img-home.jpg") center center/cover no-repeat; */
+  /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
   height: 100vh;
   width: 100%;
   display: flex;
@@ -36,9 +26,10 @@ video {
 
 .hero-container > p {
   margin-top: 8px;
-  color: white;
+  color: #fff;
   font-size: 32px;
-  font-family: "Trebuchet MS";
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .hero-btns {
@@ -55,15 +46,13 @@ video {
 
 @media screen and (max-width: 960px) {
   .hero-container > h1 {
-    color: #fff;
     font-size: 70px;
     margin-top: -150px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  hero-container > h1 {
-    color: #fff;
+  .hero-container > h1 {
     font-size: 50px;
     margin-top: -100px;
   }
